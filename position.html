@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 100px; height: 100px;
+            background:yellow;
+            position: relative;
+            top: 1px solid black;
+        }
+        .abs{
+            width: 10px; height: 10px;
+            background:red;
+            position: absolute;
+            top: 100px;
+        } */
+        /* .pos{
+            width: 200px;height:200px;
+            background:tomato;
+            position:fixed; top: 50px; left:50px 
+        } */
+          .pos{
+            width: 200px;height:200px;
+            background:tomato;
+            position:sticky; top: 50px; left:50px 
+        }
+    </style>
+</head>
+<body>
+    <!-- static,relative,absolute,fixed,sticky -->
+    <!-- static = 기본값 -->
+    <!-- relative = 문서흐름에 따라감  -->
+    <!-- absolute = 문서에 흐름에 제외됨 가장 가까운 상위 요소에 포지션을 기준으로 위치를
+        (전에 포지션이 선언되지 않았다면 브라우저를 기준으로 떨어짐)-->
+    <!-- fixed = 문서흐름에서 제외되고 화면에 고정되어 스크롤시 따라감 -->
+    <!-- sticky = 문서흐름따라 상위 요소 포지션을 기준으로 배치.스크롤 이동시 화면에 고정되어 따라감 -->
+    <!-- <div></div>
+    <div>
+        <div class="abs"></div>
+    </div>
+    <p>ppp</p> -->
+    <div>
+        첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+        첫번째<br>첫번째<br>첫번째<br>첫번째<br>첫번째<br>
+    </div>
+    <div class="pos"></div>
+    <div>
+        두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+        두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+        두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+        두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+        두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+        두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+        두번째<br>두번째<br>두번째<br>두번째<br>두번째<br>
+    </div>
+</body>
+</html>

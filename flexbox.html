@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* row,column,row-reverse(가로지만 진행 방향이 왼쪽 > 오른쪽) 등 */
+        /* .container{
+            display: flex;
+            flex-direction: row;
+        }
+        /
+        .item {
+            width: 80px;
+            height: 80px;
+            background: orange;
+        } */
+        /* .container{
+            display: flex;
+            width: 300px; height: 300px;
+            border: 2px solid black;
+            flex-wrap: wrap-reverse;
+            justify-content: space-between;
+            align-items: center;
+        } */
+        /* .self{
+          align-self: center; 
+        } */
+        /* flex 내부 요소가 너무 커져 flex 외부로 나갈 크기가 되면 내부요소를 줄여버림 */
+        .item{
+            width: 120px;height: 60px;
+            background: teal;
+        }
+        .self{
+            align-self:flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- flex = 박스 내 요소 정리 -->
+    <!-- flex-direction = flexbox내 요소를 배치할 때 사용할 주축 및 방향 지정 (row가 기본값,주축-교차축 기억)-->
+
+    <!-- <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div> -->
+
+    <!-- justify-content는 flexbox 주축에서 요소 배치 방법
+    align-items는 flexbox 교차축에서 요소 배치 방법
+    self가 붙으면 개별적으로 지정 시켜서 배치됨
+    flex-wrap flex박스에서 커서 줄여진 요소들을 원래형태로 돌린후 위치를 옮김
+    -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item self">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+
+</html>

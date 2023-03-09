@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* [class]{
+            color: blue;
+        } */
+        /* [class = "item"]{
+            color: blue;
+        } */
+        /* [id]{
+            color: brown;
+        } */
+        /* [class *="t"]{
+            color: blue;
+        } */
+        /* body 태그 내부에 모든 p요소를 지정 */
+        /* body p{
+            color: orange;
+        } */
+         /* body 태그 내부에 바로 아래 위치한 p 요소를 지정 예) body > span이면 적용 안됨*/
+         /* body > p{
+            color: orange;
+        } */
+        /* h1 바로 뒤에 위치한 p만 지정
+        h1 + p{
+            color: red;
+        } */
+    </style>
+ 
+</head>
+<body>
+    <!-- 특성 선택자 = [],[class],[class="item"] 
+        class *= "it" 클래스 값에 it포함된 요소 선택
+        class ^= "it" 클래스 값이 it로 시작된 요소 선택
+        class $= "it" 클래스 값이 it로 끝나는 요소 선택
+    -->
+    <h1>연습</h1>
+    <p>1</p>
+    <p class="text">2</p>
+    <p id="unique">3</p>
+    <p class="item">4</p>
+    <p>5 <span>fd </span>gn</p>
+
+</body>
+</html>

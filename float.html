@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <style>
+        #a{
+            width: 100px;
+            height: 50px;
+            background: orange;
+            float: right;
+        }
+        #b{
+            width: 100px;
+            height:100px;
+            background: royalblue;
+            /* 순서대로가 아닌 left,right 끝에 배치 */
+            float: left;
+        }
+        p{
+            /* float left,right,both 위치에 있는 요소 아레에 배치 */
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 요소를 따로 -->
+    <div id="a"></div>
+    <div id="b"></div>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+
+
+</body>
+</html>

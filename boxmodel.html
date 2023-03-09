@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        /* div{
+            border:3px solid red;
+            padding: 10px; 
+            margin: 20px;
+            width: 90px;height: 35px;
+        } */
+        /* div{
+            box-sizing: boder-box;
+            width: 100px;height: 100px;
+            border:5px solid tomato;
+            padding: 10px 20px;
+        } */
+        div{
+            box-sizing: boder-box;
+            width: 500px;height: 500px;
+            border:5px solid tomato;
+            /* no-repeat = 이미지 반복 안하도록 */
+            /* background-image: url(./화면\ 캡처\ 2022-06-16\ 164138.png);
+            background-repeat: no-repeat;
+            background-position: center; 
+            background-size: cover;*/
+            background: url(./img/화면\ 캡처\ 2022-06-16\ 164138.png) no-repeat center;
+            /* background-color: red; */
+            
+        }
+    </style>
+</head>
+
+<body>
+<!-- 박스모델 = content > padding > boder(테두리)> margin -->
+ <!-- <div>요소의 콘텐츠</div> -->
+ <!-- <span>check</span> -->
+
+ <!-- box-sizing = 박스모델의 너비와 높이 계산방법을 지정 
+ 1.content-box = 콘텐츠 영역만 계산 = 기본값
+ 2.border-box = padding,margin 포함 계산 예) width:100px = 박스모델크기 = 100px(다른걸 늘리면 content영역이 줄어버림)-->
+ <!-- <div></div> -->
+
+ <div>헬로우</div>
+</body>
+</html>
