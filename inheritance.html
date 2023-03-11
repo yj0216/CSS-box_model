@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* border와 display는 상위요소를 상속하지 않음 */
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px; height: 300px;
+
+        color: tomato;
+        font-size: 24px;
+        border: 3px dashed red;
+    }
+    /* inherit = 상위 요소 값 물려받기
+    initial= 기본값 사용
+    unset = 상위 요소로 물려받는 값이면 쓰고 아니면 기본값사용 */
+    P{
+        color: initial;
+        border: inherit;
+        font-size: unset;
+    }
+</style>
+<body>
+    <div>
+        <p>가운데 p 태그</p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- first-line marker placeholder vefore after -->
+  <style>
+      /* 첫번쨰 줄 */
+      /* p::first-line{
+          color: red;
+      }
+      /* 첫번째 글자 */
+      /*
+      p::first-letter{
+        color: yellow;
+      } */
+      /* 글자옆에 점 */
+      /* li::marker{
+        color: tal;
+      } */
+      /* 인풋테그 내부 글자 */
+      /* input::placeholder{
+        font-size: 20px;
+        color: rebeccapurple;
+      } */
+      /*원래 내용에다가 추가로 붙일떄*/
+    p::before{
+        content: "앞에다 추가 텍스트";
+        color: red;
+    }
+  </style>
+  <!-- <p>
+    퍼스트 라인 그리고 퍼스트 레터
+    퍼스트 라인 그리고 퍼스트 레터
+    퍼스트 라인 그리고 퍼스트 레터
+    퍼스트 라인 그리고 퍼스트 레터
+    퍼스트 라인 그리고 퍼스트 레터
+  </p> -->
+  <!-- <ul>
+    <li>d</li>
+    <li>d</li>
+    <li>d</li>
+  </ul> -->
+
+  <!-- <input type="text" placeholder="아무거나 쓰세요!"> -->
+
+  <p>원본</p>
+</body>
+</html>
